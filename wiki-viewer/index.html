@@ -2,7 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
+
 <title>Wiki Viewer</title>
+<style type="text/css">
+@media print{
+.search {
+}
+}
+</style>
 </head>
 <script src="js/index.js"></script>
 <body>
@@ -11,8 +18,8 @@
 </div>
 <div>
 <form>
-	<input type="text"></input>
-	<button type="submit">Search</button>
+	<input type="text" class="search">
+	<button type="submit" id="sub-btn">Search</button>
 </form>    
 </div>
 </body>
