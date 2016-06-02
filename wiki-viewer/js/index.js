@@ -23,7 +23,7 @@ $("#sub-btn").click(function(e)
 					},
 					success: function(data)
 					{
-						console.log(data[1]);
+						console.log(data);
 					}
 					
 					});
