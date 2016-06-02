@@ -20,7 +20,13 @@ $("#sub-btn").click(function(e)
 					'action': "opensearch",
 					'format': "json",
 					'search': $(".search").val()
-					}});
+					},
+					success: function(data)
+					{
+						console.log(data[1]);
+					}
+					
+					});
 	}
 
 });
