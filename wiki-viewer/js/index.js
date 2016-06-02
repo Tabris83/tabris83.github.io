@@ -20,7 +20,7 @@ $("#sub-btn").click(function(e)
 					'action': "opensearch",
 					'format': "json",
 					'search': $(".search").val()
-					}};
+					}});
 	}
 
 });
