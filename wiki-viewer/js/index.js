@@ -8,8 +8,19 @@ var URL_rand = "https://en.wikipedia.org/wiki/Special:Random";
 var URL_base = "";
 $("#sub-btn").click(function(e) 
 {
-	if ($(".search").val() == "")
+	if ($(".search").val() === "")
 	{
 		$(".search").val("Random");
 	}
+	else
+	{
+		$.ajax({url: "http://en.wikipedia.org/w/api.php",
+				dataType: "jsonp",
+				data: {
+					'action': "opensearch",
+					'format': "json",
+					'search': $(".search").val()
+					}};
+	}
+
 });
