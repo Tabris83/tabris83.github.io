@@ -18,7 +18,7 @@ $("#sub-btn").click(function(e)
 				dataType: "jsonp",
 				data: {
 					'action': "opensearch",
-					'format': "json",
+					'format': "jsonp",
 					'search': $(".search").val()
 					},
 					success: function(data)
@@ -27,6 +27,7 @@ $("#sub-btn").click(function(e)
 					}
 					
 					});
+				
 	}
 
 });
